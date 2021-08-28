@@ -1,11 +1,6 @@
-import { CssBaseline, Grid } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Layout from "../components/Layout";
-import {
-  makeStyles,
-  Typography,
-  Button,
-  Link as MuiLink,
-} from "@material-ui/core";
+import { makeStyles, Typography, Button } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Player from "../components/Player";
@@ -84,7 +79,7 @@ const Home = () => {
       <Layout>
         <video
           className={classes.videoBackground}
-          src="/background.mp4"
+          src="https://web-battle.s3.amazonaws.com/round1/background.mp4"
           muted
           loop
           autoPlay
@@ -127,11 +122,19 @@ const Home = () => {
       </Layout>
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <img src="/image1.jpg" alt="hoverboard" className={classes.image} />
+          <img
+            src={process.env.PUBLIC_URL + "/image1.jpg"}
+            alt="hoverboard"
+            className={classes.image}
+          />
         </Grid>
         <Grid item sm={6}>
           <div className={classes.textContainer}>
-            <img src="/icon1.svg" alt="icon 1" style={{ width: "100px" }} />
+            <img
+              src={process.env.PUBLIC_URL + "/icon1.svg"}
+              alt="icon 1"
+              style={{ width: "100px" }}
+            />
             <Typography variant="h3" align="center" gutterBottom>
               Eco-Friendly
             </Typography>
@@ -146,7 +149,11 @@ const Home = () => {
       <Grid container direction={screenWidth > 600 ? "row" : "column-reverse"}>
         <Grid item xs={12} sm={6}>
           <div className={classes.textContainer}>
-            <img src="/icon2.svg" alt="icon 2" style={{ width: "100px" }} />
+            <img
+              src={process.env.PUBLIC_URL + "/icon2.svg"}
+              alt="icon 2"
+              style={{ width: "100px" }}
+            />
             <Typography variant="h3" align="center" gutterBottom>
               Music On The Go
             </Typography>
@@ -158,16 +165,28 @@ const Home = () => {
           </div>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <img src="/image3.jpg" alt="hoverboard" className={classes.image} />
+          <img
+            src={process.env.PUBLIC_URL + "/image3.jpg"}
+            alt="hoverboard"
+            className={classes.image}
+          />
         </Grid>
       </Grid>
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <img src="/image9.jpg" alt="hoverboard" className={classes.image} />
+          <img
+            src={process.env.PUBLIC_URL + "/image9.jpg"}
+            alt="hoverboard"
+            className={classes.image}
+          />
         </Grid>
         <Grid item xs={12} sm={6}>
           <div className={classes.textContainer}>
-            <img src="/icon3.svg" alt="icon 3" style={{ width: "100px" }} />
+            <img
+              src={process.env.PUBLIC_URL + "/icon3.svg"}
+              alt="icon 3"
+              style={{ width: "100px" }}
+            />
             <Typography variant="h3" align="center" gutterBottom>
               Always Connected
             </Typography>

@@ -110,12 +110,20 @@ const Gallery = () => {
         >
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
             <ImageListItem
-              cols={number % 2 == 0 && number != 10 ? 1 : 2}
+              cols={number % 2 === 0 && number !== 10 ? 1 : 2}
               rows={screenWidth > 600 ? 2 : 1}
               key={number}
             >
-              <Button onClick={toggleDialog(true, `/image${number}.jpg`)}>
-                <img src={`/image${number}.jpg`} alt="some image" />
+              <Button
+                onClick={toggleDialog(
+                  true,
+                  process.env.PUBLIC_URL + `/image${number}.jpg`
+                )}
+              >
+                <img
+                  src={process.env.PUBLIC_URL + `/image${number}.jpg`}
+                  alt="some image"
+                />
               </Button>
             </ImageListItem>
           ))}

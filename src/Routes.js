@@ -5,6 +5,8 @@ import Features from "./pages/Features";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
+const NotFound = () => <div>The page not found</div>;
+
 const Routes = () => {
   return (
     <BrowserRouter>
@@ -14,6 +16,7 @@ const Routes = () => {
         <Route path="/features" component={Features} exact />
         <Route path="/about" component={About} exact />
         <Route path="/contact" component={Contact} exact />
+        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   );

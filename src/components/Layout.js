@@ -69,7 +69,11 @@ const Layout = ({ children }) => {
       <section className={open ? classes.activeShowcase : classes.showcase}>
         <header className={classes.header}>
           <Link to="/" className={classes.link}>
-            <img src="/hoverboard_1_.svg" alt="logo" className={classes.logo} />
+            <img
+              src={process.env.PUBLIC_URL + "/hoverboard_1_.svg"}
+              alt="logo"
+              className={classes.logo}
+            />
           </Link>
           <Button className={classes.toggleMenu} onClick={toggleOpen}>
             {open ? (
