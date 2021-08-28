@@ -1,7 +1,7 @@
 {
   "name": "round1",
   "version": "0.1.0",
-  "homepage": "https://ankan2000.github.io/web-battle-round1/",
+  "homepage": "https://ankan2000.github.io/web-battle-round1",
   "private": "false",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
