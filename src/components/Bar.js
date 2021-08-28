@@ -55,13 +55,26 @@ export default function Bar() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={index}>
-            <Link to={`/${text}`}>
-              <ListItemText primary={text} />
-            </Link>
-          </ListItem>
-        ))}
+        <ListItem button>
+          <Link to="/features">
+            <ListItemText primary="Features" />
+          </Link>
+        </ListItem>
+        <ListItem button>
+          <Link to="/gallery">
+            <ListItemText primary="Gallery" />
+          </Link>
+        </ListItem>
+        <ListItem button>
+          <Link to="/about">
+            <ListItemText primary="About" />
+          </Link>
+        </ListItem>
+        <ListItem button>
+          <Link to="/contact">
+            <ListItemText primary="Contact Us"></ListItemText>
+          </Link>
+        </ListItem>
       </List>
     </div>
   );
