@@ -100,6 +100,7 @@ const Home = () => {
             <Typography
               variant="subtitle1"
               style={{ color: "#fff" }}
+              component="p"
               gutterBottom
             >
               Hover Board XYZ
@@ -218,6 +219,7 @@ const Home = () => {
           <Typography
             variant="h2"
             style={{ color: "#fff", margin: "20px" }}
+            component="h4"
             gutterBottom
           >
             FAQs:
@@ -227,8 +229,8 @@ const Home = () => {
           <Accordion style={{ margin: "5px 20px" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
+              aria-controls="Where-to-buy-answer"
+              id="panel1-header"
             >
               <Typography>Where To Buy?</Typography>
             </AccordionSummary>
@@ -245,8 +247,8 @@ const Home = () => {
           <Accordion style={{ margin: "5px 20px" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
+              aria-controls="Who-can-ride-answer"
+              id="panel2-header"
             >
               <Typography>Who can ride?</Typography>
             </AccordionSummary>
@@ -263,8 +265,8 @@ const Home = () => {
           <Accordion style={{ margin: "5px 20px" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
+              aria-controls="when-to-avail-answer"
+              id="panel3-header"
             >
               <Typography>When will it be available?</Typography>
             </AccordionSummary>

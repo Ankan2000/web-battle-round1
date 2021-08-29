@@ -29,27 +29,27 @@ const MenuList = () => {
     <>
       <List className={classes.menu}>
         <Link to="/" className={classes.link}>
-          <ListItem button>
+          <ListItem button component="li">
             <ListItemText primary="Home" style={{ color: "#000" }} />
           </ListItem>
         </Link>
         <Link to="/gallery" className={classes.link}>
-          <ListItem button>
+          <ListItem button component="li">
             <ListItemText primary="Gallery" style={{ color: "#000" }} />
           </ListItem>
         </Link>
         <Link to="/features" className={classes.link}>
-          <ListItem button>
+          <ListItem button component="li">
             <ListItemText primary="Features" style={{ color: "#000" }} />
           </ListItem>
         </Link>
         <Link to="/about" className={classes.link}>
-          <ListItem button>
+          <ListItem button component="li">
             <ListItemText primary="About" style={{ color: "#000" }} />
           </ListItem>
         </Link>
         <Link to="/contact" className={classes.link}>
-          <ListItem button>
+          <ListItem button component="li">
             <ListItemText
               primary="Contact Us"
               style={{ color: "#000" }}

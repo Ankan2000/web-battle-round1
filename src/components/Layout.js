@@ -75,7 +75,11 @@ const Layout = ({ children }) => {
               className={classes.logo}
             />
           </Link>
-          <Button className={classes.toggleMenu} onClick={toggleOpen}>
+          <Button
+            className={classes.toggleMenu}
+            onClick={toggleOpen}
+            aria-label="show navbar"
+          >
             {open ? (
               <CloseIcon fontSize="large" />
             ) : (
